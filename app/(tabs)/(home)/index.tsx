@@ -22,8 +22,8 @@ const HomeScreen = () => {
         throw new Error(`Request failed due to ${response.status}`);
       }
       const data = await response.json();
-     // console.log("Response : ", data);
-     setUsers(data)
+      // console.log("Response : ", data);
+      setUsers(data);
     } catch (error) {
       console.warn("Internet connection lost!");
     }
@@ -44,4 +44,4 @@ const HomeScreen = () => {
 
 export default HomeScreen;
 
-
+const styles = StyleSheet.create({});
